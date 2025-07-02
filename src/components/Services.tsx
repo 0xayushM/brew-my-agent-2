@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import SpotlightCard from './ui/spotlightCard';
 
 interface ServiceCardProps {
   title: string;
@@ -10,13 +11,14 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, description, icon, features }: ServiceCardProps) => {
   return (
-    <div className="bg-bgLight rounded-lg p-8 border border-white/10 transition-all hover:border-primaryAccent/50 h-full flex flex-col">
-      <div className="text-primaryAccent mb-6">
+    <div className="bg-bgLight rounded-lg hover:border-primaryAccent/50 h-full flex flex-col">
+      <div className="text-primaryAccent mb-0">
         <div className="w-16 h-16 flex items-center justify-center rounded-full bg-primaryAccent/10">
           <span className="text-3xl" dangerouslySetInnerHTML={{ __html: icon }}></span>
         </div>
       </div>
-      <h3 className="font-heading text-xl mb-3">{title}</h3>
+      <h3 className="avalon-bold text-xl mb-0">{title}</h3>
+      <hr className="my-4 border-gray-600" />
       <p className="text-textMedium mb-6">{description}</p>
       <div className="mb-6 flex-grow">
         <ul className="space-y-2">
@@ -30,12 +32,12 @@ const ServiceCard = ({ title, description, icon, features }: ServiceCardProps) =
           ))}
         </ul>
       </div>
-      <Link 
+      {/* <Link 
         href="#cta" 
         className="inline-block text-center px-6 py-2 rounded-full border border-primaryAccent text-primaryAccent hover:bg-primaryAccent hover:text-bgDark transition-all"
       >
         Learn More
-      </Link>
+      </Link> */}
     </div>
   );
 };
@@ -91,19 +93,20 @@ const Services = () => {
   return (
     <section id="services" className="py-20">
       <div className="container mx-auto max-w-7xl px-5">
-        <h2 className="font-heading text-4xl text-center mb-4">Our Services</h2>
-        <p className="text-textMedium text-center max-w-2xl mx-auto mb-12">
-          We offer comprehensive AI solutions to help businesses of all sizes harness the power of artificial intelligence
+        <h2 className="avalon-bold text-4xl text-center mb-4">Our Services</h2>
+        <p className="text-textMedium text-center max-w-4xl mx-auto mb-12">
+          We offer comprehensive <span className="needle-underline primary-accent">AI solutions</span> to help businesses of all sizes harness the power of artificial intelligence
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              title={service.title}
-              description={service.description}
-              icon={service.icon}
-              features={service.features}
-            />
+            <SpotlightCard key={index} className="custom-spotlight-card">
+              <ServiceCard
+                title={service.title}
+                description={service.description}
+                icon={service.icon}
+                features={service.features}
+              />
+            </SpotlightCard>
           ))}
         </div>
       </div>
