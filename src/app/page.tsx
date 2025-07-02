@@ -32,7 +32,7 @@ export default function Home() {
       {/* <Pricing /> */}
       <Contact />
       <CTA />
-      {/* <FAQ /> */}
+      <FAQ />
       <Footer />
     </div>
   );
