@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AnimatedButton from './ui/AnimatedButton';
+import SpotlightCard from './ui/spotlightCard';
 
 interface FeatureProps {
   title: string;
@@ -37,42 +39,44 @@ const About = () => {
         <span className="inline-block px-3 py-1 mb-4 rounded-full bg-primaryAccent/20 text-primaryAccent text-sm font-semibold">
           About Us
         </span>
-        <h2 className="font-heading text-4xl mb-12 max-w-3xl">
+        <h2 className="avalon-bold text-4xl mb-12 max-w-3xl">
           Shaped by 12+ years of designing, building, learning, and experimenting
         </h2>
 
         {/* Grid layout */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Primary card */}
-          <div className="bg-bgLight rounded-2xl p-8 border border-white/10 flex flex-col justify-between lg:row-span-2">
+          <SpotlightCard className="bg-bgLight rounded-2xl p-8 border border-white/10 flex flex-col justify-between lg:row-span-2">
             <div>
-              <h3 className="font-heading text-2xl mb-4">We make working with us easy</h3>
+              <h3 className="avalon-bold text-2xl mb-4">We make working with us easy</h3>
+              <hr className="my-4 border-gray-600" />
               <p className="text-textMedium mb-8">
                 Enjoy peace of mind with our risk-free model – only pay if you're completely satisfied with the results.<br />
                 <br />
                 Your success is our priority.
               </p>
             </div>
-            <Link
+            <AnimatedButton
               href="#cta"
               className="inline-block text-center px-7 py-3 rounded-full bg-primaryAccent text-bgDark font-bold border-2 border-primaryAccent transition-all hover:bg-transparent hover:text-primaryAccent"
             >
               Book a call
-            </Link>
-          </div>
+            </AnimatedButton>
+          </SpotlightCard>
 
           {/* Feature cards */}
           {features.map((feature, index) => (
-            <div
+            <SpotlightCard
               key={index}
               className="bg-bgLight rounded-2xl p-8 border border-white/10 transition-all hover:border-primaryAccent/50"
             >
               <div className="mb-6 text-primaryAccent text-4xl">
                 <span dangerouslySetInnerHTML={{ __html: feature.icon }}></span>
               </div>
-              <h3 className="font-heading text-xl mb-3">{feature.title}</h3>
+              <h3 className="avalon-bold text-xl mb-3">{feature.title}</h3>
+              <hr className="my-4 border-gray-600" />
               <p className="text-textMedium">{feature.description}</p>
-            </div>
+            </SpotlightCard>
           ))}
         </div>
       </div>
