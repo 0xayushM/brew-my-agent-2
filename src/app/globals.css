@@ -21,7 +21,7 @@
 }
 
 .text-dark {
-  color: var(--bg-dark);
+  color: var(--text-dark);
 }
 
 .text-light {
@@ -48,7 +48,7 @@
 }
 
 @font-face {
-  font-family: 'Avalon';
+  font-family: 'AvalonBold';
   font-style: normal;
   font-weight: bold;
   src: url('/fonts/AvalonBold.ttf') format('truetype');
@@ -96,4 +96,66 @@ body {
 
 .animate-pulse-slow {
   animation: pulse-slow 10s infinite alternate ease-in-out;
+}
+
+.scribble-underline,
+.angry-underline {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+}
+
+.scribble-underline::after,
+.angry-underline::after {
+  content: '';
+  position: absolute;
+  left: -5%;
+  bottom: -20px;
+  width: 110%;
+  height: 25px;
+  background-image: url("/angry-underline.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: -1;
+}
+
+.needle-underline {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+}
+
+.needle-underline::after {
+  content: '';
+  position: absolute;
+  left: -5%;
+  bottom: -15px;
+  width: 110%;
+  height: 25px;
+  background-image: url("/needle-underline.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: -1;
+}
+
+.dual-underline {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+}
+
+.dual-underline::after {
+  content: '';
+  position: absolute;
+  left: -5%;
+  bottom: -15px;
+  width: 110%;
+  height: 25px;
+  background-image: url("/dual-underline.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: -1;
 }
