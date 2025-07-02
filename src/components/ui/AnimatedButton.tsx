@@ -10,12 +10,12 @@ const AnimatedButton = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, A
   { children, className, href, ...props },
   ref
 ) => {
-  const commonClasses = `relative group overflow-hidden px-6 py-2 bg-transparent border border-light rounded-full flex items-center transition-all duration-300 ease-out ${className || ''} no-underline inline-block text-center hover:text-black`;
+  const commonClasses = `relative group overflow-hidden px-6 py-2 bg-transparent border border-light rounded-full flex items-center transition-all duration-300 ease-out ${className || ''} no-underline inline-block text-center hover:text-black z-0`;
 
   const content = (
     <>
       <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 transition-all duration-500 ease-in-out bg-light rounded-lg group-hover:w-full group-hover:h-full z-0"></span>
-      <span className="relative z-10 transition-colors duration-500">
+      <span className="relative z-0 transition-colors duration-500">
         {children}
       </span>
     </>

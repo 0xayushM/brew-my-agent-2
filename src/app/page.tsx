@@ -17,7 +17,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div className="bg-dark text-light min-h-screen avalon px-20">
+    <div className="bg-dark text-light min-h-screen avalon px-5 md:px-20">
       <Header />
       <Hero />
       <Problems />

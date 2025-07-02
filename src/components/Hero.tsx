@@ -2,9 +2,9 @@ import AnimatedButton from './ui/AnimatedButton';
 
 const Hero = () => {
   return (
-    <section id="hero" className="h-full md:h-screen text-center relative">
+    <section id="hero" className="h-screen text-center relative">
       <div className="container mx-auto max-w-7xl px-5 h-full flex items-center flex-col justify-center">
-        <h1 className="avalon-bold text-4xl md:text-5xl lg:text-6xl leading-tight max-w-4xl mx-auto mb-5">
+        <h1 className="avalon-bold text-4xl md:text-5xl lg:text-6xl leading-tight max-w-2xl md:max-w-4xl mx-auto mb-5">
           Your Best Employee is an <span className="dual-underline primary-accent uppercase">AI Agent</span>. We'll <span className="needle-underline primary-accent uppercase">brew</span> one for You.
         </h1>
         <p className="text-textMedium text-lg max-w-2xl mx-auto mb-8">

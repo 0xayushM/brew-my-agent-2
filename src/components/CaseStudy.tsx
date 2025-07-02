@@ -23,11 +23,11 @@ const CaseStudy = () => {
   ];
 
   return (
-    <section id="case-study" className="py-20 bg-bgLight">
-      <div className="container mx-auto max-w-7xl px-5">
-        <h2 className="avalon-bold text-4xl text-center mb-10">Real <span className="dual-underline primary-accent">Results</span>, Not Just Recommendations</h2>
+    <section id="case-study" className="py-20">
+      <div className="md:container max-w-7xl md:px-5">
+        <h2 className="avalon-bold text-3xl md:text-4xl text-center mb-10">Real <span className="dual-underline primary-accent">Results</span>, Not Just Recommendations</h2>
         <SpotlightCard>
-        <div className="rounded-lg p-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div className="rounded-lg md:p-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <h3 className="avalon-bold text-xl text-primaryAccent mb-2.5">Case Study: SaaS Co. Support Automation</h3>
             <p className="text-textMedium mb-5">
