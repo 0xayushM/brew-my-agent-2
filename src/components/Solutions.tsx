@@ -1,7 +1,10 @@
+import SpotlightCard from "./ui/spotlightCard";
+
 const SolutionCard = ({ title, description }: { title: string, description: string }) => {
   return (
-    <div className="bg-bgLight p-8 rounded-lg border border-white/10 transition-transform hover:-translate-y-2.5 hover:shadow-2xl">
-      <h3 className="font-heading text-xl text-primaryAccent mb-2.5">{title}</h3>
+    <div className="bg-bgLight rounded-lg transition-transform">
+      <h3 className="avalon-bold text-xl text-primaryAccent mb-2.5">{title}</h3>
+      <hr className="my-4 border-gray-600" />
       <p className="text-textMedium">{description}</p>
     </div>
   );
@@ -24,16 +27,17 @@ const Solutions = () => {
   ];
 
   return (
-    <section id="solutions" className="py-20 bg-bgLight">
+    <section id="solutions" className="py-40 bg-bgLight">
       <div className="container mx-auto max-w-7xl px-5">
-        <h2 className="font-heading text-4xl text-center mb-10">Our Custom-Brewed AI Solutions</h2>
+        <h2 className="avalon-bold text-4xl text-center mb-10">Our Custom-Brewed <span className="dual-underline primary-accent">AI Solutions</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {solutions.map((solution, index) => (
-            <SolutionCard
-              key={index}
-              title={solution.title}
-              description={solution.description}
-            />
+            <SpotlightCard key={index} className="custom-spotlight-card">
+              <SolutionCard
+                title={solution.title}
+                description={solution.description}
+              />
+            </SpotlightCard>
           ))}
         </div>
       </div>
