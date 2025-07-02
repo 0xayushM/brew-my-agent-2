@@ -35,7 +35,7 @@ const Problems = () => {
   return (
     <section id="problems" className="py-20">
       <div className="container mx-auto max-w-7xl px-5 h-full flex items-center flex-col justify-center">
-        <h2 className="avalon-bold text-4xl text-center mb-10">Is Your Business Feeling the <span className="dual-underline primary-accent">Strain</span>?</h2>
+        <h2 className="avalon-bold text-4xl text-center mb-10">Is Your Business Feeling the <span className="needle-underline primary-accent">Strain?</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {problems.map((problem, index) => (
             <SpotlightCard key={index} className="custom-spotlight-card">
