@@ -7,9 +7,10 @@ interface ProcessStepProps {
 const ProcessStep = ({ number, title, description }: ProcessStepProps) => {
   return (
     <div className="flex items-start mb-10 last:mb-0">
-      <div className="text-5xl font-heading text-primaryAccent leading-none mr-8">{number}</div>
+      <div className="text-5xl avalon-bold font-heading primary-accent needle-underline leading-none mr-8">{number}</div>
       <div>
-        <h3 className="font-heading text-xl text-primaryAccent mb-2.5">{title}</h3>
+        <h3 className="avalon-bold text-xl text-primaryAccent mb-2.5">{title}</h3>
+        <hr className="my-4 border-gray-600" />
         <p className="text-textMedium">{description}</p>
       </div>
     </div>
@@ -36,9 +37,9 @@ const Process = () => {
   ];
 
   return (
-    <section id="process" className="py-20">
+    <section id="process" className="py-40">
       <div className="container mx-auto max-w-7xl px-5">
-        <h2 className="font-heading text-4xl text-center mb-10">Our Brewing Process</h2>
+        <h2 className="avalon-bold text-4xl text-center mb-10">Our <span className="dual-underline primary-accent">Brewing</span> Process</h2>
         <div className="max-w-3xl mx-auto">
           {steps.map((step, index) => (
             <ProcessStep

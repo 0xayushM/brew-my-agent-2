@@ -20,9 +20,10 @@ const TeamMember = ({ name, role, bio, imagePath }: TeamMemberProps) => {
         />
       </div>
       <div className="p-6">
-        <h3 className="font-heading text-xl mb-1">{name}</h3>
-        <p className="text-primaryAccent mb-4">{role}</p>
-        <p className="text-textMedium">{bio}</p>
+        <h3 className="avalon-bold text-xl mb-1">{name}</h3>
+        <p className="avalon mb-4">{role}</p>
+        <hr className="my-4 border-gray-600" />
+        <p className="avalon">{bio}</p>
       </div>
     </div>
   );
@@ -53,8 +54,8 @@ const Team = () => {
   return (
     <section id="team" className="py-20">
       <div className="container mx-auto max-w-7xl px-5">
-        <h2 className="font-heading text-4xl text-center mb-4">Meet Our Brew Masters</h2>
-        <p className="text-textMedium text-center max-w-2xl mx-auto mb-12">
+        <h2 className="avalon-bold text-4xl text-center mb-4">Meet Our Brew <span className="dual-underline primary-accent">Masters</span></h2>
+        <p className="avalon text-textMedium text-center max-w-2xl mx-auto mb-12">
           Our team combines deep technical expertise with business acumen to deliver AI solutions that drive real results
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

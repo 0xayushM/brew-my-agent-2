@@ -40,7 +40,7 @@ const About = () => {
           About Us
         </span>
         <h2 className="avalon-bold text-4xl mb-12 max-w-3xl">
-          Shaped by 12+ years of designing, building, learning, and experimenting
+          Shaped by <span className="needle-underline primary-accent">12+ years</span> of designing, building, learning, and experimenting
         </h2>
 
         {/* Grid layout */}

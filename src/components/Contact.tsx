@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react';
 import AnimatedButton from './ui/AnimatedButton';
 
@@ -35,11 +36,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-bgDark to-bgLight">
+    <section id="contact" className="py-40 bg-gradient-to-b from-bgDark to-bgLight">
       <div className="container mx-auto max-w-7xl px-5">
-        <div className="max-w-4xl mx-auto bg-bgLight rounded-lg p-8 border border-white/10">
-          <h2 className="font-heading text-4xl text-center mb-4">Let's build something awesome together</h2>
-          <p className="text-textMedium text-center max-w-2xl mx-auto mb-8">
+        <div className="max-w-4xl mx-auto bg-bgLight rounded-lg p-8">
+          <h2 className="avalon-bold text-4xl text-center mb-4">Let's <span className="needle-underline primary-accent">brew</span> something awesome together</h2>
+          <p className="avalon text-textMedium text-center max-w-2xl mx-auto mb-8">
             We're eager to learn about your vision. Share your project details below, and let's explore how we can collaborate to build something truly innovative.
           </p>
           

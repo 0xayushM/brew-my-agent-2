@@ -1,3 +1,5 @@
+import SpotlightCard from "./ui/spotlightCard";
+
 interface ResultItemProps {
   metric: string;
   label: string;
@@ -6,7 +8,7 @@ interface ResultItemProps {
 const ResultItem = ({ metric, label }: ResultItemProps) => {
   return (
     <div className="text-center">
-      <div className="text-5xl font-bold text-primaryAccent font-heading">{metric}</div>
+      <div className="text-5xl avalon-bold primary-accent">{metric}</div>
       <div className="text-textMedium">{label}</div>
     </div>
   );
@@ -23,10 +25,11 @@ const CaseStudy = () => {
   return (
     <section id="case-study" className="py-20 bg-bgLight">
       <div className="container mx-auto max-w-7xl px-5">
-        <h2 className="font-heading text-4xl text-center mb-10">Real Results, Not Just Recommendations</h2>
-        <div className="bg-bgLight rounded-lg p-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center border border-white/10">
+        <h2 className="avalon-bold text-4xl text-center mb-10">Real <span className="dual-underline primary-accent">Results</span>, Not Just Recommendations</h2>
+        <SpotlightCard>
+        <div className="rounded-lg p-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div>
-            <h3 className="font-heading text-xl text-primaryAccent mb-2.5">Case Study: SaaS Co. Support Automation</h3>
+            <h3 className="avalon-bold text-xl text-primaryAccent mb-2.5">Case Study: SaaS Co. Support Automation</h3>
             <p className="text-textMedium mb-5">
               A mid-sized SaaS company was struggling with high support costs and slow response times during off-peak hours. Their team was burnt out handling repetitive Tier-1 questions.
             </p>
@@ -46,6 +49,7 @@ const CaseStudy = () => {
             </div>
           </div>
         </div>
+        </SpotlightCard>
       </div>
     </section>
   );
