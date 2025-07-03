@@ -10,7 +10,7 @@ const CTA = () => {
           No pressure, just possibilities.
         </p>
         <AnimatedButton 
-          href="mailto:hello@brewmyagent.com" 
+          href="mailto:rajveer@brewmyagent.com" 
           className="inline-block px-7 py-3 rounded-full bg-primaryAccent text-bgDark font-bold border-2 border-primaryAccent transition-all hover:bg-transparent hover:text-primaryAccent"
         >
           Book Your Free Discovery Call

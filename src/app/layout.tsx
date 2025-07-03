@@ -18,6 +18,9 @@ const playfairDisplay = Playfair_Display({
 export const metadata: Metadata = {
   title: "brewmyagent | Custom AI for Business Efficiency",
   description: "We provide end-to-end AI consulting and implementation, creating bespoke AI agents that integrate seamlessly into your operations.",
+  icons: {
+    icon: "/logo.svg",
+  },
 };
 
 export default function RootLayout({
