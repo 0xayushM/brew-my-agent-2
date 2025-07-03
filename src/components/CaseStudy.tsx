@@ -16,10 +16,10 @@ const ResultItem = ({ metric, label }: ResultItemProps) => {
 
 const CaseStudy = () => {
   const results = [
-    { metric: "75%", label: "Ticket Deflection" },
-    { metric: "98%", label: "Reduction in First Response Time" },
-    { metric: "$120k", label: "Annual Savings" },
-    { metric: "+25", label: "NPS Points" }
+    { metric: "95%", label: "Reduction in Man Hours" },
+    { metric: "$10k", label: "Annual Savings" },
+    { metric: "100%", label: "Automated Year-End Workflow" },
+    { metric: "+30", label: "Client NPS Points" }
   ];
 
   return (
@@ -29,12 +29,12 @@ const CaseStudy = () => {
         <SpotlightCard>
         <div className="rounded-lg md:p-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <h3 className="avalon-bold text-xl text-primaryAccent mb-2.5">Case Study: SaaS Co. Support Automation</h3>
+            <h3 className="avalon-bold text-xl text-primaryAccent mb-2.5">Case Study: Accounting Co. Year-End Automation</h3>
             <p className="text-textMedium mb-5">
-              A mid-sized SaaS company was struggling with high support costs and slow response times during off-peak hours. Their team was burnt out handling repetitive Tier-1 questions.
+              A leading accounting firm was struggling with overwhelming workloads and tight deadlines during year-end accounts preparation. Their team spent countless hours on repetitive, manual processes, leading to stress, overtime, and delayed client deliverables.
             </p>
             <p className="text-textMedium">
-              We brewed a custom support agent, integrated with their helpdesk and knowledge base, to handle common queries and escalate complex issues.
+              We designed and deployed a suite of intelligent agents to automate the entire year-end accounts workflow. From data collection and reconciliation to report generation and compliance checks, our solution reduced manual effort by 95%, freeing up staff for higher-value tasks and ensuring faster, more accurate year-end closures.
             </p>
           </div>
           <div>

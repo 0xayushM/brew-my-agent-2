@@ -40,9 +40,11 @@ const About = () => {
           About Us
         </span>
         <h2 className="avalon-bold text-4xl mb-12 max-w-3xl">
-          Shaped by <span className="needle-underline primary-accent">12+ years</span> of designing, building, learning, and experimenting
+          Shaped by <span className="needle-underline primary-accent">2+ years</span> of designing, building, learning, and experimenting
         </h2>
-
+        <p className="text-textMedium text-lg mb-8 max-w-2xl">
+          We're a team of 23-year-olds, locked in on AI and building the future of intelligent automation.
+        </p>
         {/* Grid layout */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Primary card */}
