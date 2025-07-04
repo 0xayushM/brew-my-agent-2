@@ -5,6 +5,8 @@ const Footer = () => {
         <p className="text-textMedium">
           &copy; {new Date().getFullYear()} brewmyagent. All Rights Reserved. | We&apos;re Brewing the Future of Work.<br />
           <a href="mailto:rajveer@brewmyagent.com" className="underline hover:text-primaryAccent">rajveer@brewmyagent.com</a>
+          <br className="md:hidden"/>
+          <span className="hidden md:inline"> | </span>
           <a href="mailto:ayush@brewmyagent.com" className="underline hover:text-primaryAccent">ayush@brewmyagent.com</a>
         </p>
       </div>
